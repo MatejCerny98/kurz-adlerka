@@ -16,6 +16,10 @@ Route::get('/', 'Controller@index');
     Route::get('/login', 'Controller@login');
     Route::get('/logout', 'Controller@logout');
 
+        Route::get('/cart', 'Controller@cart');
+
+                Route::get("/add/{id}" , "Controller@add");
+
 
 
 

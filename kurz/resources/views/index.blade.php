@@ -32,7 +32,11 @@
         <ul class="navbar-nav ml-auto">
 
 
+
           @if($logged_in)
+            <li class="nav-item">
+              <a class="nav-link" href="/cart">Shopping cart</a>
+            </li>
 
             <li class="nav-item">
               <a class="nav-link" href="/logout">Logout {{$name}}</a>
@@ -87,7 +91,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a class="btn btn-primary" role="button" href="#">Vložiť do košíka</a>
+                <a class="btn btn-primary" role="button" href="/add/{{$p -> id}}">Vložiť do košíka</a>
               </div>
             </div>
           </div>
